@@ -8,10 +8,10 @@ const submitBtn = document.getElementById("submit");
 console.log(submitBtn);
 //chiediamo all'utente di  inserire la sua email
 alert("Inserisca l'email nell'apposito campo");
-//inizializziamo una variabile booleana
-let flag = false;
 //Al click di submit
 submitBtn.addEventListener("click", function() {
+    //inizializziamo una variabile booleana
+    let flag = false;
     //SE il campo dell'input è vuoto ALLORA alert"Campo vuoto"
     if(userEmailInput.value === ""){
         alert("Campo vuoto!")
@@ -45,7 +45,7 @@ submitBtn.addEventListener("click", function() {
                     alert("Allora riprovi! Puoddarsi che ha semplicemente sbagliato a scrivere!");
                 }else if(userChoise === "no"){
                     /* ALTRIMENTI SE la risposta è "no"
-                     gli comunichiamo di inserire la sua imail per registrarsi e una volta inserito 
+                     gli comunichiamo di inserire la sua email per registrarsi e una volta inserito 
                     aggiungiamo l'email all'array lo ringraziamo*/
                     const userMailSignUp = prompt("Può registrarsi inserendo qui la sua email!");
                     emails.push(userMailSignUp);

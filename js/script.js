@@ -35,6 +35,7 @@ submitBtn.addEventListener("click", function() {
             if(flag === "true"){
                 alert("Benvenuto!");
                 userEmailInput.value = "";
+                //MILESTONE2
                 const firstNumber = Math.floor(Math.random() * 6) + 1;
                 console.log(firstNumber);
                 alert(`E' stato gerato per TE ${firstNumber}`);

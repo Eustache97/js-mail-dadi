@@ -35,6 +35,20 @@ submitBtn.addEventListener("click", function() {
             if(flag === "true"){
                 alert("Benvenuto!");
                 userEmailInput.value = "";
+                const firstNumber = Math.floor(Math.random() * 6) + 1;
+                console.log(firstNumber);
+                alert(`E' stato gerato per TE ${firstNumber}`);
+                const secondNumber = Math.floor(Math.random() * 6) + 1;
+                console.log(secondNumber);
+                alert(`E' stato gerato per il computer ${secondNumber}`);
+                if(firstNumber > secondNumber){
+                    alert("HAI VINTO!!!")
+                }else if(secondNumber > firstNumber){
+                    alert("HA VINTO IL COMPUTER")
+                }else{
+                    alert("PARITA' !")
+                } 
+                
             }else{
                 userEmailInput.value = "";
                 //ALTRIMENTI "utente non trovato", e gli chiediamo se è sicuro di essere registrato(si o no)"
@@ -55,8 +69,6 @@ submitBtn.addEventListener("click", function() {
                     alert("Mi sa che non mi sta risposto come le ho chiesto di rispondere!");
                 }
             }
-}
+ }
 })
 
-        
-        
